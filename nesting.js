@@ -51,7 +51,16 @@ var employees = [
 */
 
 //Code Here
-
+function employeeUpdater() {
+  for ( let key in employees ) {
+    if( employees[key].firstName === 'Theo' ) {
+      delete employees[key];
+    } else if ( employees[key].firstName === 'Lorie' ) {
+      employees[key].department === 'HR';
+    }
+  }
+  return employees;
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -69,7 +78,17 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
+function removeDuplicates(){
+  var dupArr = workplaceAccidents;
+    for(let i = 0; i < dupArr.length; i++){
+       for(let j = dupArr.length -1; j > i; j--) {
+           if(dupArr[i] === dupArr[j]){
+        dupArr.splice(j,1);
+    }
+    }
+  }
+  return dupArr;
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -97,8 +116,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+// var grumpyActivity;
+// var fluffy2ndFriend;
 
 
 

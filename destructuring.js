@@ -22,8 +22,8 @@ var carDetails = {
 */
 
 //Code Here
-
-
+let { color, make, model,year } = carDetails
+let newVar = (color, make, model, year)
 
 ////////// PROBLEM 2 //////////
 
@@ -35,7 +35,8 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  let { firstName, lastName, title} = obj
+  let newVar2 = (firstName, lastName, title)
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -55,7 +56,15 @@ function greeting( obj ) {
 
 //Code Here
 
+function totalPopulation(obj) {
+let {utah, califorinia, texas, arizona} = obj;
 
+let newVar3 = 0
+  for (let key in obj) {
+    newVar3 += obj[key]
+  }
+  return newVar3
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -68,7 +77,11 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+// function ingredients(obj) {
+//   carb: 'alot', 
+//   fat: 'even more', 
+//   protein: 'little'
+// }
 
 
 ////////// PROBLEM 5 //////////
