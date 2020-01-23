@@ -43,8 +43,7 @@ function addNums(num1, num2, num3) {
 }
 
 // code here
-addNums
-result = {...addNums()};
+let result = addNums(...numbers)
 
 ////////// PROBLEM 4 //////////
 

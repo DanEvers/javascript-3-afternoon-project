@@ -139,9 +139,9 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 
 
 //Code Here
-let bobsTotal = purchases.reduce(function(element) {
+let bobsTotal = purchases.reduce(function(bobsTotal, element) {
   if (element.owner === 'Bob') {
     return bobsTotal += element.price;
   }
-})
-
+  return bobsTotal
+},0);

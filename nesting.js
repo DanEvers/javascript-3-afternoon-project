@@ -52,11 +52,11 @@ var employees = [
 
 //Code Here
 function employeeUpdater() {
-  for ( let key in employees ) {
-    if( employees[key].firstName === 'Theo' ) {
-      delete employees[key];
-    } else if ( employees[key].firstName === 'Lorie' ) {
-      employees[key].department === 'HR';
+  for ( let i=0; i < employees.length; i++ ) {
+    if( employees[i].firstName === 'Theo' ) {
+      delete employees[i];
+    } else if ( employees[i].firstName === 'Lorie' ) {
+      employees[i].department === 'HR';
     }
   }
   return employees;
@@ -116,8 +116,8 @@ var cat = {
 */
 
 //Code Here
-// var grumpyActivity;
-// var fluffy2ndFriend;
+var grumpyActivity;
+var fluffy2ndFriend;
 
 
 
